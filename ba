@@ -1,0 +1,20 @@
+library(completejourney)
+
+# get the full transactions data set
+transactions <- get_transactions()
+transactions
+## # A tibble: 1,469,307 x 11
+##    household_id store_id basket_id product_id quantity sales_value retail_disc
+##    <chr>        <chr>    <chr>     <chr>         <dbl>       <dbl>       <dbl>
+##  1 900          330      31198570… 1095275           1        0.5        0    
+##  2 900          330      31198570… 9878513           1        0.99       0.1  
+##  3 1228         406      31198655… 1041453           1        1.43       0.15 
+##  4 906          319      31198705… 1020156           1        1.5        0.290
+##  5 906          319      31198705… 1053875           2        2.78       0.8  
+##  6 906          319      31198705… 1060312           1        5.49       0.5  
+##  7 906          319      31198705… 1075313           1        1.5        0.290
+##  8 1058         381      31198676… 985893            1        1.88       0.21 
+##  9 1058         381      31198676… 988791            1        1.5        1.29 
+## 10 1058         381      31198676… 9297106           1        2.69       0    
+## # … with 1,469,297 more rows, and 4 more variables: coupon_disc <dbl>,
+## #   coupon_match_disc <dbl>, week <int>, transaction_timestamp <dttm>
